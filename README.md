@@ -11,15 +11,16 @@
 
 * ES6 import mode
   ```JS
-  import upload from 'm-uploader'
+  import Upload from 'm-uploader'
   ```
 
 #### Use examples
 * Basic usage
   ```JS
-  const uploader = upload({
+  const uploader = new Upload({
     pickId: 'selector',  // id selector
-    url: '/upload'
+    tokenName: 'TOKEN',  // Token name of local storage
+    url: '/api/upload'
   })
   uploader.$on('loading', value => {
     console.log('Uploading', value)
@@ -30,9 +31,10 @@
   ```
 * Get upload progress
   ```JS
-  const uploader = upload({
+  const uploader = new Upload({
     pickId: 'selector',
-    url: '/upload',
+    tokenName: 'TOKEN',
+    url: '/api/upload',
     getProgress(percentage) {
       console.log(`Upload progress：${percentage}`)
     }
@@ -42,9 +44,10 @@
 #### 使用示例
 * 基本用法
   ```JS
-  const uploader = upload({
+  const uploader = new Upload({
     pickId: 'selector',
-    url: '/upload'
+    tokenName: 'TOKEN',
+    url: '/api/upload'
   })
   uploader.$on('loading', value => {
     console.log('Uploading', value)
@@ -55,9 +58,10 @@
   ```
 * 获取进度
   ```JS
-  const uploader = upload({
+  const uploader = new Upload({
     pickId: 'selector',
-    url: '/upload',
+    tokenName: 'TOKEN',
+    url: '/api/upload',
     getProgress(percentage) {
       console.log(`Upload progress：${percentage}`)
     }

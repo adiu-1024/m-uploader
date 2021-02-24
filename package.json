@@ -1,7 +1,7 @@
 {
   "name": "m-uploader",
-  "version": "1.0.0",
-  "description": "File upload with native JS",
+  "version": "1.0.1",
+  "description": "Upload files using native JS",
   "main": "lib/index.js",
   "scripts": {
     "build": "babel es --out-dir lib"
@@ -26,6 +26,10 @@
   "bugs": {
     "url": "https://github.com/adiu-1024/m-uploader/issues",
     "email": "adiu_1024@163.com"
+  },
+  "registry": {
+    "type": "git",
+    "url": "https://github.com/adiu-1024/m-uploader"
   },
   "files": [
     "package.json",
