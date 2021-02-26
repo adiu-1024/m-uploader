@@ -1,6 +1,6 @@
 {
   "name": "m-uploader",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Upload files using native JS",
   "main": "lib/index.js",
   "scripts": {
@@ -34,7 +34,6 @@
   "files": [
     "package.json",
     "README.md",
-    "lib/upload.js",
     "lib/index.js"
   ],
   "license": "MIT",
