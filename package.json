@@ -1,6 +1,6 @@
 {
   "name": "m-uploader",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Upload files using native JS",
   "main": "lib/index.js",
   "scripts": {

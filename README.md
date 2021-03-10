@@ -40,30 +40,3 @@
     }
   })
   ```
-
-#### 使用示例
-* 基本用法
-  ```JS
-  const uploader = new Upload({
-    pickId: 'selector',
-    tokenName: 'TOKEN',
-    url: '/api/upload'
-  })
-  uploader.$on('loading', value => {
-    console.log('Uploading', value)
-  })
-  uploader.$on('success', res => {
-    console.log('Response results', res)
-  })
-  ```
-* 获取进度
-  ```JS
-  const uploader = new Upload({
-    pickId: 'selector',
-    tokenName: 'TOKEN',
-    url: '/api/upload',
-    getProgress(percentage) {
-      console.log(`Upload progress：${percentage}`)
-    }
-  })
-  ```
